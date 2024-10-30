@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Daily Stock News Feed</title>
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/stories.css">
+  <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+  <!-- Centered Landing Section -->
+  <section id="landing" class="landing-container">
+    <h1>Daily Stock News Feed</h1>
+    <form id="stock-search-form" class="search-form">
+      <input id="stock-ticker" type="text" placeholder="Search for a stock ticker (e.g., TSLA)" required>
+      <button type="button" onclick="submitStockSearch(event)">Search</button>
+    </form>
+  </section>
+
+  <!-- Stock news section (hidden initially) -->
+  <section id="landing" class="landing-container">
+    <button id="back-button" class="back-button-hidden" onclick="goBack()">Back</button>
+    <ol id="all-stories-list" class="stories-list"></ol>
+  </section>
+
+  <!-- JavaScript files -->
+  <script src="https://unpkg.com/jquery"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/models.js"></script>
+  <script src="js/stories.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

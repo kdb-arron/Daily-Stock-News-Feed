@@ -1,0 +1,29 @@
+/* Navbar layout adjustments */
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-divider {
+  color: lightgray;
+  margin: 0 5px;
+}
+
+.story-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.story-divider {
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.favorite i {
+  cursor: pointer;
+}
+
+.favorite .fas {
+  color: gold;
+}
